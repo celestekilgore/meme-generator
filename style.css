@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: grid;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  cursor: default;
+  height: 35vh;
+}
+
+h1 {
+  display: flex;
+  font-size: 5rem;
+}
+
+h3 {
+  color: white;
+}
+
+.letter {
+  transition: color 1000ms;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 15px;
+  height: 35vh;
+  background-color: black;
+  color: white;
+  margin: 25px;
+  border-radius: 25px;
+}
+
+
+input {
+  margin: 5px;
+  border-radius: 25px;
+  border-width: 1px;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+button {
+  margin: 5px;
+  border-radius: 25px;
+  border-width: 1px;
+  background-color: white;
+  transition: color 2000ms linear;
+  font-size: larger;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: grab;
+}
+
+#meme-container {
+  padding: 25px;
+}
+
+.meme {
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.meme img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.meme .top-text, .meme .bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 15px 0;
+  font-family: impact;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000;
+}
+
+.top-text {
+  top: 10px;
+}
+
+.bottom-text {
+  bottom: 10px;
+}
+
+.delete-btn {
+  position: absolute;
+  display: none;
+  left: 30%;
+  right: 30%;
+  top: 40%;
+  bottom: 40%;
+  opacity: 60%;
+  background-color: none;
+}
+
+.meme:hover .delete-btn {
+  display:block;
+}
+
+
+
+
+

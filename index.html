@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+
+<body>
+
+  <div class="header_container">
+    <header id = "head">
+      <h3>Welcome to the...</h3>
+      <h1>
+        <span class="letter">M</span>
+        <span class="letter">E</span>
+        <span class="letter">M</span>
+        <span class="letter">E</span>
+      </h1>
+      <h1>
+        <span class="letter">G</span>
+        <span class="letter">E</span>
+        <span class="letter">N</span>
+        <span class="letter">E</span>
+        <span class="letter">R</span>
+        <span class="letter">A</span>
+        <span class="letter">T</span>
+        <span class="letter">O</span>
+        <span class="letter">R</span>
+      </h1>
+      <h3>Fill out the form below to create your own memes.</h3>
+    </header>
+  </div>
+
+  <div class="form_container">
+    <form id="meme-form">
+      <label for="url">Image URL:</label>
+      <input type="url" id = "url">
+      <label for="topText">Top Text:</label>
+      <input type="text" id = "topText">
+      <label for="bottomText">Bottom Text:</label>
+      <input type="text" id = "bottomText">
+      <label for="submit">Generate Meme: </label>
+      <button id = "submit-button">SUBMIT!</button>
+    </form>
+  </div>
+
+  <div id="meme-container"></div>
+
+  <script src="memegen.js"></script>
+
+</body>
+
+</html>
